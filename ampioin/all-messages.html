@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Ampio All Messages', {
+        category: 'Ampio',
+        color: '#d4d9db',
+        defaults: {
+            name: { value: "" },
+            server: { type: "ampioconfig", required: true }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "face.png",
+        label: function () {
+            return this.name || "Ampio All Messages";
+        }
+    });
+</script>
